@@ -7,9 +7,11 @@
 
 ## Run It
 
-1. Run `$ npm run serve` for server
+1. Build with `$npm run build`
 
-2. Open browser http://localhost:1337
+2. Run `$ npm run serve` for server
+
+3. Open browser http://localhost:1337
 
    - Open, e.g. http://localhost:1337/roarr/2.14.6 load dependency tree immediately although server-side rendering makes it slow.
 
