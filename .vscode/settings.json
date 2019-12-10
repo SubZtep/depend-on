@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "typescript",
+      "autoFix": true
+    }
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": ["tests/mocks/*.json"],
+      "url": "http://json.schemastore.org/npmpackagejsonlintrc"
+    }
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

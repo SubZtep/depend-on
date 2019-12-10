@@ -1,0 +1,53 @@
+{
+  "name": "depend-on",
+  "version": "0.1.0",
+  "description": "NPM Registry dependency tree",
+  "author": "Andras Serfozo <subztep@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "dist/depend-on.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc -b",
+    "serve": "nodemon --watch dist dist/server.js",
+    "debug": "node --inspect dist/index.js",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "tsc --noEmit && eslint ./src/**/*.ts --fix",
+    "lint:fix:snyk": "tsc --noEmit && cross-env NODE_ENV=production eslint ./src/**/*.ts --fix",
+    "test": "cross-env NODE_ENV=test mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "flat-cache": "^2.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "semver": "^6.3.0",
+    "signale": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/flat-cache": "^2.0.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.16",
+    "@types/request-promise": "^4.1.45",
+    "@types/roarr": "^2.14.2",
+    "@types/semver": "^6.2.0",
+    "@types/signale": "^1.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-security": "^1.4.0",
+    "mocha": "^6.2.2",
+    "nock": "^11.7.0",
+    "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}

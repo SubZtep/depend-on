@@ -1,0 +1,27 @@
+{
+  "name": "eslint",
+  "version": "0.0.4",
+  "author": { "name": "Nicholas C. Zakas", "email": "nicholas+npm@nczconsulting.com" },
+  "description": "YYYAn Esprima-based pattern checker for JavaScript.",
+  "bin": { "eslint": "./bin/eslint.js" },
+  "scripts": {
+    "ctest": "istanbul cover --print both vows -- --spec ./tests/*/*/*.js",
+    "test": "npm run-script lint && vows -- --spec ./tests/*/*.js ./tests/*/*/*.js",
+    "lint": "node node_modules/jshint/bin/jshint ./config/eslint.json ./lib"
+  },
+  "repository": { "type": "git", "url": "https://github.com/nzakas/eslint" },
+  "dependencies": { "optimist": "*", "astw": "*", "esprima": "*", "jshint": "*" },
+  "devDependencies": { "vows": "~0.7.0", "istanbul": "~0.1.10", "sinon": "*", "jshint": "~2.1.4" },
+  "keywords": ["ast", "lint", "javascript", "ecmascript"],
+  "preferGlobal": true,
+  "license": "MIT",
+  "_id": "eslint@0.0.4",
+  "dist": {
+    "shasum": "cb659e7ed06ee84ad8a707844d625dbb7ba361a0",
+    "tarball": "https://registry.npmjs.org/eslint/-/eslint-0.0.4.tgz"
+  },
+  "_npmVersion": "1.1.59",
+  "_npmUser": { "name": "nzakas", "email": "nicholas@nczconsulting.com" },
+  "maintainers": [{ "name": "nzakas", "email": "nicholas@nczconsulting.com" }],
+  "directories": {}
+}
