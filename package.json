@@ -23,7 +23,7 @@
     "flat-cache": "^2.0.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
-    "semver": "^6.3.0",
+    "semver": "^7.3.2",
     "signale": "^1.4.0"
   },
   "devDependencies": {
